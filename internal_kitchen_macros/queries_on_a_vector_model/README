@@ -1,0 +1,93 @@
+The files inside this directory are used to do queries of
+similar words a vector model built using the skip-grams
+word2vec model. Here below are the instruction on how to
+use them.
+
+1) All three files have to be on the same directory.
+
+2) All of them have to be executables. You can just do,
+>$ chmod +x file_name
+command in order to change the permissions.
+
+3) File descriptions,
+
+3.1) stream1_dictionary_script.R file
+This is the main Rscript file. Line 12 has to be modified
+with the proper path to the vector model file. The google-news
+vector model can be downloaded from the link below,
+https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing
+
+3.2) functions_script.sh file
+This file contains some bash functions. Go inside
+and read the comments to understand what they do
+
+3.3) launch_test_dictionary.sh file
+This is a template of the main file that is ran to launch the
+similar words queries.
+
+  3.3.1) Define the topn variable. This one specifies the top-n list of
+         similar words to be output.
+  3.3.2) Define the output directory path in line 7, the dir variable.
+  3.3.3) Define an array with the list of query words like in lines 16
+         and 18. In this example we have two queries,
+           - "hero"   query with the seed-words: "hero" and "stupid".
+           - "vilain" query with the seed-words: "vilain" and "Trump".
+  3.3.4) Launch the query like in lines 26 and 27. The commands should be
+         self explanatory.
+
+The output of this script should be a set of files containing the
+list of similar words from the query. The files are written inside
+the output directory specified by the dir variable.
+
+
+The set of output files from the different queries can be
+combined, lower-case it and cleaned up using the
+Similarity_list_preprocessing.R R-script. The configuration is made
+at the lines between 112 and 125. The variables are described here below,
+- truncations list (line 112):
+  The queries in this example were made using a top-n of 200.
+  This maybe can be too much. So, then combining the queries
+  we can truncate the list similar words to values lower than 200.
+  In this example we have 200, 100 and 50.
+- The file list (line 120):
+  This is a list structure with all the queries, and all the files
+  produced for each of the seed-words.
+
+The command between the lines 127 and 133 combines all the queries,
+clean them, lower-case them and remove duplicates.
+
+The output is a set of files with the lists of words for each query.
+
+========================
+IMPORTANT: hand cleaning
+------------------------
+This set of output files have to be cleaned by hand as the similar words
+queries give not only similar or synonyms words but also words which are
+used in a similar context but which don't have similar meaning.
+
+==========================
+Dictionary in a csv format
+--------------------------
+As a final step of this process, the list of words for each
+query have to be converted to a csv format to be later used
+by the main code. For this we can use the R-script
+Dictionary_generation.R
+
+The setup is performed between lines 60 and 70.
+
+The output of this script will be a file inside the
+test/test_dictionary/ folder and with the name
+test_dictionary.csv. The content of this output file
+should be like below
+
+hero,hero,stupid,
+vilain,vilain,trump,
+
+
+
+
+
+
+
+
+#

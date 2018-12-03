@@ -1,0 +1,88 @@
+# corn
+corn,corn,maize,sweetcorn,
+
+# meat
+# meat,meat,pork,beef,lamb
+# Separating meat categories
+pork,pork,
+beef,beef,
+lamb,lamb,
+
+# gelatine
+gelatine,gelatine,
+
+# seeds
+seeds,seed,sunflower,poppy,seed oil,poppy_seeds,poppy seed,poppyseed,
+
+# spices
+spice,spice,coriander,cinnamon,chilli,
+
+# fruits
+# fruit,fruit,apple,peach,plum,strawberry,blueberry,raspberry,pear,orange,
+# Separating fruits categories
+apple,apple,
+peach,peach,
+plum,plum,
+strawberry,strawberry,
+blueberry,blueberry,
+raspberry,raspberry,
+pear,pear,
+orange,orange,
+
+
+# Tomato
+tomato,tomato,
+
+# vegetables
+vegetable,vegetable,carrot,
+
+# latex
+latex,latex,
+
+# carrageenan
+carrageenan,carrageenan,seaweed,sea weed,
+
+# coconut
+coconut,coconut,
+
+# chest nut
+chestnut,chestnut,chest nut,
+
+# pinenut
+pinenut,pinenut,pine nut,
+
+# fungus
+fungus,fungus,quorn,yeast,mushroom,
+
+# kiwi
+kiwi,kiwi,
+
+# peas
+peas,peas,
+
+# chickpeas
+chickpeas,chickpeas,chick peas,
+
+# pepper
+pepper,pepper,bell pepper,
+
+# pumpkin
+pumpkin,pumpkin,squash,punkin,
+
+# kidney beans
+kidney_beans,kidney bean,kidneybean,
+
+# garlic
+garlic,garlic,
+
+# banana
+banana,banana,
+
+# lentils
+lentils,lentil,
+
+# buckwheat
+buckwheat,buckwheat,
+
+# edible insects
+edible_insects,edible insect,edible bug,cricket,grasshopper,mealworm,buffalo worm,buffaloworm,

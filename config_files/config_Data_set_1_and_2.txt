@@ -1,0 +1,36 @@
+# configuration file for data analysis
+
+######################
+## Loading the data ##
+######################
+
+# input file directory
+input_file_dir:  Data
+
+# list of inputs files
+input_file_list:  20161029-20171127.xlsx  20171128-20180926.xlsx 20180927-20181106_noheader.xlsx
+
+# data_sheet
+sheet_name:  Sheet1
+
+# project name
+project_name: Data set 1 and 2
+
+# set this parameter to yes if want to rerun data pre-processing and labelling
+rerun_data_preprocessing: No
+
+# set this parameter to yes if want to rerun data labelling only
+rerun_data_labelling:  
+
+########################
+## Data visualization ##
+########################
+
+do_static_plots: Yes
+
+static_plot_format: pdf
+
+launch_shiny_dash_board: No
+
+
+#
